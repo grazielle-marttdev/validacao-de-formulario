@@ -1,0 +1,108 @@
+body {
+    background: url('../images/bg-repeat.jpg');
+    background-size: contain;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 12px 50px;
+    flex-wrap: wrap;
+}
+
+main .msg-intro {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
+
+main .msg-intro h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+main .msg-intro p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 11px;
+}
+
+form {
+    background-color: #fff;
+    width: 340px;
+    padding: 20px;
+}
+
+form .form-campos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 7px;
+}
+
+.form-campos .campo-input, .form-campos .campo-textarea {
+    display: flex;
+    flex-direction: column
+}
+
+.form-campos span {
+    color: #F52E2E;
+}
+
+.form-campos .msg-obrigatorio {
+    display: none;
+}
+
+input, textarea {
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 8px 11px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #A8A8A8;
+    font-weight: 500;
+}
+
+form p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+form button {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #3CCC87;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+form button:hover {
+    background-color: #34b476;
+}
+
+input.borda-verde, textarea.borda-verde {
+    border: 2px solid #00C22B;
+}
+
+input.borda-vermelha, textarea.borda-vermelha {
+    border: 2px solid #F52E2E;
+}

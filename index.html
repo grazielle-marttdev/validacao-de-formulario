@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio | Formulário de Validação</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="msg-intro">
+            <h2>FICOU COM DÚVIDA?</h2>
+            <h2>NOS MANDE UMA MENSAGEM!</h2>
+            <p>caso tenha ficado com quaquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <form>
+            <div class="form-campos">
+                <div class="campo-input">
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo *">
+                    <span class="msg-obrigatorio">campo obrigatório</span>
+                </div>
+
+                <div class="campo-input">
+                    <input type="email" name="email" id="email" placeholder="Email *">
+                    <span class="msg-obrigatorio">campo obrigatório</span>
+                </div>
+
+                <div class="campo-input">
+                    <input type="number" name="telefone" id="telefone" placeholder="Telefone *">
+                    <span class="msg-obrigatorio">campo obrigatório</span>
+                </div>
+
+                <div class="campo-textarea">
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                    <span class="msg-obrigatorio">campo obrigatório</span>
+                </div>
+            </div>
+
+            <p>*campos obrigatórios</p>
+
+            <button type="submit" id="btn-form">Enviar</button>
+        </form>
+    </main>
+
+    <script src="validar-formulario.js"></script>
+</body>
+</html>
