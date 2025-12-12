@@ -1,0 +1,33 @@
+@media (max-width: 959px) {
+    main {
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 80px;
+        gap: 25px;
+    }
+
+    main .msg-intro {
+        text-align: center;
+        max-width: 430px;
+    }
+}
+
+@media (max-width: 630px) {
+    main {
+        padding: 0 20px;
+    }
+
+    form {
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0 8px;
+    }
+
+    main .msg-intro h2 {
+        font-size: 1.8rem;
+    }
+}
