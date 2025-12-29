@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,26 +17,26 @@
             <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
         </div>
 
-        <form>
+        <form id="form-contato" novalidate>
             <div class="form-campos">
                 <div class="campo-input">
-                    <input type="text" name="nome" id="nome" placeholder="Nome completo *">
-                    <span class="msg-obrigatorio">campo obrigatório</span>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome *">
+                    <span id="erro-nome" class="error">campo obrigatório</span>
                 </div>
 
                 <div class="campo-input">
-                    <input type="email" name="email" id="email" placeholder="Email *">
-                    <span class="msg-obrigatorio">campo obrigatório</span>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    <span id="erro-email" class="error">campo obrigatório</span>
                 </div>
 
                 <div class="campo-input">
-                    <input type="number" name="telefone" id="telefone" placeholder="Telefone *">
-                    <span class="msg-obrigatorio">campo obrigatório</span>
+                    <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                    <span id="erro-telefone" class="error">campo obrigatório</span>
                 </div>
 
                 <div class="campo-textarea">
-                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
-                    <span class="msg-obrigatorio">campo obrigatório</span>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem *"></textarea>
+                    <span id="erro-mensagem" class="error">campo obrigatório</span>
                 </div>
             </div>
 
@@ -46,6 +46,6 @@
         </form>
     </main>
 
-    <script src="validar-formulario.js"></script>
+    <script type="module" src="src/js/validar-formulario.js"></script>
 </body>
 </html>

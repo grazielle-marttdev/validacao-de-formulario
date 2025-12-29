@@ -103,10 +103,8 @@ form button:hover {
     background-color: #34b476;
 }
 
-input.borda-verde, textarea.borda-verde {
-    border: 2px solid #00C22B;
-}
-
-input.borda-vermelha, textarea.borda-vermelha {
-    border: 2px solid #F52E2E;
+.error {
+    color: #F52E2E; 
+    font-size: 1.1rem;
+    display: block;
 }
